@@ -63,11 +63,11 @@ export default function Navbar() {
           </div>
 
           <div className="md:hidden flex items-center gap-2">
-            <Link href="/pages/contact" className="text-[#FFD700] border border-[#FFD700] rounded-full px-3 py-1 text-sm font-semibold">
+            <Link href="/pages/contact" className="text-[#25D366] border border-[#25D366] rounded-full px-3 py-1 text-sm font-semibold">
               Contact Us
             </Link>
             <button onClick={() => { setIsOpen(true); setSubmenu(null); }}>
-              <Menu size={28} color="#FFD700" />
+              <Menu size={28} color="#25D366" />
             </button>
           </div>
         </div>
@@ -131,14 +131,14 @@ export default function Navbar() {
       </AnimatePresence>
 
       {/* Mobile Bottom Buttons */}
-      <div className="fixed bottom-0 left-0 w-full py-2 flex items-center justify-between md:hidden backdrop-blur-lg bg-black/40 z-50">
-        <button className="flex-1 mx-1 py-3 flex items-center justify-center gap-2 rounded-xl text-sm font-semibold text-white bg-[#25D366] shadow-md hover:opacity-90 transition">
+      <div className="fixed bottom-0 left-0 w-full gap-0.5 py-1 flex items-center justify-between md:hidden backdrop-blur-lg bg-black/40 z-50">
+        <button className="flex-1 py-2 flex items-center justify-center gap-2 rounded-lg text-sm font-semibold text-white bg-[#116530] shadow-md hover:opacity-90 transition">
           <FaWhatsapp size={20} /> WhatsApp
         </button>
-        <button className="flex-1 mx-1 py-3 flex items-center justify-center gap-2 rounded-xl text-sm font-semibold text-white bg-[#1DA1F2] shadow-md hover:opacity-90 transition">
+        <button className="flex-1 py-2 flex items-center justify-center gap-2 rounded-lg text-sm font-semibold text-white bg-[#14532d] shadow-md hover:opacity-90 transition">
           <FaEnvelope size={20} /> Enquiry
         </button>
-        <button className="flex-1 mx-1 py-3 flex items-center justify-center gap-2 rounded-xl text-sm font-semibold text-white bg-[#FF3B30] shadow-md hover:opacity-90 transition">
+        <button className="flex-1 py-2 flex items-center justify-center gap-2 rounded-lg text-sm font-semibold text-white bg-[#0f4024] shadow-md hover:opacity-90 transition">
           <FaPhoneAlt size={20} /> Call
         </button>
       </div>
